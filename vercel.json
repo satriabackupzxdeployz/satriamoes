@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/firebase", "destination": "/api/firebase.js" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
