@@ -1,0 +1,9 @@
+{
+  "name": "satriamoe-uploader",
+  "version": "1.0.0",
+  "main": "api/firebase.js",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^10.8.0"
+  }
+}
