@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-primary: #e8e4d9;
+    --bg-card: #fff;
+    --border-color: #000;
+    --text-primary: #000;
+    --text-muted: #666;
+    --accent: #4f46e5;
+    --success: #22c55e;
+    --pink: #ff6b9d;
+    --yellow: #ffd93d;
+    --cyan: #00d4ff;
+    --lime: #c4ff61;
+    --shadow: 4px 4px 0px #000;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+.container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+.header { text-align: center; margin-bottom: 32px; }
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: var(--lime);
+    border: 3px solid var(--border-color);
+    box-shadow: var(--shadow);
+    font-weight: 600;
+}
+
+.main-nav { display: flex; justify-content: center; gap: 15px; margin: 25px 0; }
+
+.nav-btn {
+    padding: 10px 20px;
+    background: var(--bg-card);
+    border: 3px solid var(--border-color);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.nav-btn.active { background: var(--accent); color: white; }
+
+.section { display: none; }
+.section.active { display: block; }
+
+.uploader-card {
+    background: var(--bg-card);
+    border: 3px solid var(--border-color);
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+.upload-area {
+    border: 4px dashed var(--border-color);
+    padding: 50px 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 25px;
+    background: var(--bg-primary);
+    border: 3px solid var(--border-color);
+    margin-top: 10px;
+}
+
+.progress-fill { height: 100%; background: var(--cyan); width: 0%; }
+
+.btn {
+    padding: 12px 24px;
+    font-weight: 700;
+    border: 3px solid var(--border-color);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.btn-primary { background: var(--pink); color: white; }
+
+.result-box, .upload-item {
+    background: var(--bg-card);
+    border: 3px solid var(--border-color);
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: var(--shadow);
+}
+
+.alert {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    border: 3px solid var(--border-color);
+    background: var(--yellow);
+    display: none;
+    z-index: 1000;
+}
+
+.alert.show { display: block; }@import
